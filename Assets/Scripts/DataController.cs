@@ -37,6 +37,11 @@ public class DataController : MonoBehaviour
         get { return PlayerPrefs.GetFloat("Level",1); }
         set { PlayerPrefs.SetFloat("Level",value);}
     }
+    public float Gold //골드
+    {
+        get { return PlayerPrefs.GetFloat("Gold",0); }
+        set { PlayerPrefs.SetFloat("Gold",value);}
+    }
 
     public float Enemy_Hp // 적 현재체력
     {
