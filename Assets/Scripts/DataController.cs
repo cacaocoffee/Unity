@@ -25,6 +25,10 @@ public class DataController : MonoBehaviour
         } 
     }
 
+    void start()
+    {
+        PlayerPrefs.DeleteAll();
+    }
     
     public float Damage //클릭당 데미지 
     {
