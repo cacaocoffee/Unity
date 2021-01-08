@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DamageEffect : MonoBehaviour
 {
@@ -10,14 +11,14 @@ public class DamageEffect : MonoBehaviour
     public float MoveSpeed; //텍스트 이동속도
     public float disSpeed; //투명해지는 속도
     public float destroyTime; //사라지는 시간
-    public TextMeshProUGUI Damagetext; // 데미지 플로팅 텍스트
+    public Text Damagetext; // 데미지 플로팅 텍스트
     public Color a; //원래 텍스트 색 
     public int damage;
  
     private void Start()
     {
-        Damagetext = GetComponent<TextMeshProUGUI>();
         a = Damagetext.color;
+        damage = DataController.Instance.Damage;
         Damagetext.text = damage.ToString();
         Invoke("DestroyObject", destroyTime);
     }

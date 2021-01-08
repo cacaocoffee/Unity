@@ -14,8 +14,8 @@ public class DamageEffectCreat : MonoBehaviour
         {
             if (instance == null)
             {
-                instance = FindObjectOfType<DamageEffectCreat>(); //하이라키에서 데이터컨트롤러를 찾아서 넣음
-                if (instance == null) //찾았는데도 생성이 안되서 없을때.
+                instance = FindObjectOfType<DamageEffectCreat>();
+                if (instance == null) 
                 {
                     GameObject container = new GameObject("DamageEffectCreat");
                     instance = container.AddComponent<DamageEffectCreat>();
@@ -26,12 +26,11 @@ public class DamageEffectCreat : MonoBehaviour
         } 
     }
     public GameObject hudDamageText;
+    public GameObject hub;
     public Transform hudPos;
     public void DamageCreat()
     {
-        GameObject hudText = Instantiate(hudDamageText);
+        GameObject hudText = Instantiate(hudDamageText, hub.gameObject.transform); ;
         hudText.transform.position = hudPos.position;
-        hudText.GetComponent<DamageEffect>().damage = DataController.Instance.Damage;
-        
     }
 }
