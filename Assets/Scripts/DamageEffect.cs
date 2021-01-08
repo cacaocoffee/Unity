@@ -12,11 +12,13 @@ public class DamageEffect : MonoBehaviour
     public float destroyTime; //사라지는 시간
     public TextMeshProUGUI Damagetext; // 데미지 플로팅 텍스트
     public Color a; //원래 텍스트 색 
+    public int damage;
  
     private void Start()
     {
         Damagetext = GetComponent<TextMeshProUGUI>();
         a = Damagetext.color;
+        Damagetext.text = damage.ToString();
         Invoke("DestroyObject", destroyTime);
     }
 

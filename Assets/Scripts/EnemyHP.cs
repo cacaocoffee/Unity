@@ -31,7 +31,7 @@ public class EnemyHP : MonoBehaviour
     private Text EnemyHPtext;
     void Update()
     {
-        EnmeyHpBar.value = Mathf.Lerp(EnmeyHpBar.value, DataController.Instance.Enemy_Hp/  DataController.Instance.Enemy_MaxHp, Time.deltaTime * 10);//적체력표시바
+        EnmeyHpBar.value = Mathf.Lerp(EnmeyHpBar.value, (float)DataController.Instance.Enemy_Hp/(float) DataController.Instance.Enemy_MaxHp, Time.deltaTime * 10);//적체력표시바
         EnemyHPtext.text = (int)DataController.Instance.Enemy_Hp + "/" + (int)DataController.Instance.Enemy_MaxHp; //적 체력 표시 Text
     }
 

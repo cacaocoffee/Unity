@@ -30,32 +30,32 @@ public class DataController : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
     
-    public float Damage //클릭당 데미지 
+    public int Damage //클릭당 데미지 
     {
-        get { return PlayerPrefs.GetFloat("Damage",1); }
-        set { PlayerPrefs.SetFloat("Damage", value); }
+        get { return PlayerPrefs.GetInt("Damage",1); }
+        set { PlayerPrefs.SetInt("Damage", value); }
     }
 
-    public float Level //적 캐릭터의 레벨 _ 체력과 연관
+    public int Level //적 캐릭터의 레벨 _ 체력과 연관
     {
-        get { return PlayerPrefs.GetFloat("Level",1); }
-        set { PlayerPrefs.SetFloat("Level",value);}
+        get { return PlayerPrefs.GetInt("Level",1); }
+        set { PlayerPrefs.SetInt("Level",value);}
     }
-    public float Gold //골드
+    public int Gold //골드
     {
-        get { return PlayerPrefs.GetFloat("Gold",0); }
-        set { PlayerPrefs.SetFloat("Gold",value);}
+        get { return PlayerPrefs.GetInt("Gold",0); }
+        set { PlayerPrefs.SetInt("Gold",value);}
     }
 
-    public float Enemy_Hp // 적 현재체력
+    public int Enemy_Hp // 적 현재체력
     {
-        get { return PlayerPrefs.GetFloat("Enemy_Hp"); }
-        set { PlayerPrefs.SetFloat("Enemy_Hp",value);}
+        get { return PlayerPrefs.GetInt("Enemy_Hp"); }
+        set { PlayerPrefs.SetInt("Enemy_Hp",value);}
     }
-    public float Enemy_MaxHp // 적 최대체력
+    public int Enemy_MaxHp // 적 최대체력
     {
-        get { return PlayerPrefs.GetFloat("Enemy_MaxHp"); }
-        set { PlayerPrefs.SetFloat("Enemy_MaxHp",value);}
+        get { return PlayerPrefs.GetInt("Enemy_MaxHp"); }
+        set { PlayerPrefs.SetInt("Enemy_MaxHp",value);}
     }
 
 }
