@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-
+    public Animator animator;
     public void OnClick()
     {
-
+        animator.SetTrigger("Attack");
         if (DataController.Instance.Enemy_Hp  > 0)
         {
             DataController.Instance.Enemy_Hp -= DataController.Instance.Damage;
