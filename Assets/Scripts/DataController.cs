@@ -25,7 +25,7 @@ public class DataController : MonoBehaviour
         } 
     }
 
-    void start()
+    public void reset()
     {
         PlayerPrefs.DeleteAll();
     }
@@ -49,12 +49,12 @@ public class DataController : MonoBehaviour
 
     public int Enemy_Hp // 적 현재체력
     {
-        get { return PlayerPrefs.GetInt("Enemy_Hp"); }
+        get { return PlayerPrefs.GetInt("Enemy_Hp",10); }
         set { PlayerPrefs.SetInt("Enemy_Hp",value);}
     }
     public int Enemy_MaxHp // 적 최대체력
     {
-        get { return PlayerPrefs.GetInt("Enemy_MaxHp"); }
+        get { return PlayerPrefs.GetInt("Enemy_MaxHp",10); }
         set { PlayerPrefs.SetInt("Enemy_MaxHp",value);}
     }
 

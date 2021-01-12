@@ -58,11 +58,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Attack.cs" />
-     <Compile Include="Assets\Scripts\DamageEffect.cs" />
-     <Compile Include="Assets\Scripts\DamageEffectCreat.cs" />
      <Compile Include="Assets\Scripts\DataController.cs" />
-     <Compile Include="Assets\Scripts\EnemyHP.cs" />
+     <Compile Include="Assets\Scripts\UI\Attack.cs" />
+     <Compile Include="Assets\Scripts\UI\DamageEffect.cs" />
+     <Compile Include="Assets\Scripts\UI\DamageEffectCreat.cs" />
+     <Compile Include="Assets\Scripts\UI\EnemyHP.cs" />
+     <Compile Include="Assets\Scripts\UI\GoldDisplayer.cs" />
+     <Compile Include="Assets\Scripts\UI\Shop.cs" />
      <Compile Include="Assets\Scripts\UImanager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
