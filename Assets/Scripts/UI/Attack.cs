@@ -26,6 +26,6 @@ public class Attack : MonoBehaviour
         float a = 10 * Mathf.Pow(1.6f, DataController.Instance.Level);
         DataController.Instance.Enemy_MaxHp = (int) a;
         DataController.Instance.Enemy_Hp = DataController.Instance.Enemy_MaxHp;;
-        DataController.Instance.Gold += DataController.Instance.Level * 1000;
+        DataController.Instance.Gold += DataController.Instance.Level * 10;
     }
 }
