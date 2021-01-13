@@ -27,6 +27,19 @@ public class UImanager : MonoBehaviour
     }
 
     public GameObject StatMenu;
+    public GameObject statButton;
+
+    public void ButtonsOpen() // 버튼들을 보여줌
+    {
+        statButton.gameObject.SetActive(true);
+    }
+
+    public void ButtonsClose() //버튼들을 숨김
+    {
+        statButton.gameObject.SetActive(false);
+    }
+    
+
     public void StatButton()
     {
         StatMenu.gameObject.SetActive(true);
