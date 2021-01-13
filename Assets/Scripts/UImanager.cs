@@ -25,4 +25,15 @@ public class UImanager : MonoBehaviour
             return instance;
         } 
     }
+
+    public GameObject StatMenu;
+    public void StatButton()
+    {
+        StatMenu.gameObject.SetActive(true);
+    }
+    public void StatExitButton()
+    {
+        StatMenu.gameObject.SetActive(false);
+    }
+
 }
