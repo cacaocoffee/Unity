@@ -26,6 +26,7 @@ public class ButtonManager : MonoBehaviour
                 UImanager.Instance.StatButton();
                 UImanager.Instance.ButtonsClose();
                 break;
+            
             case "StatExit":
                 UImanager.Instance.StatExitButton();
                 //tuchManager.HiteffectOnoff = false;
@@ -33,6 +34,13 @@ public class ButtonManager : MonoBehaviour
                 //UiManager.MainMenuOn = true;
                 //UiManager.MainMenuNum = 0;
                 //EventManager.Instance.HitEffectController();
+                break;
+            case "Shop":
+                UImanager.Instance.ShopButton();
+                UImanager.Instance.ButtonsClose();
+                break;
+            case "ShopExit":
+                UImanager.Instance.ShopExitButton();
                 break;
         }
     }
