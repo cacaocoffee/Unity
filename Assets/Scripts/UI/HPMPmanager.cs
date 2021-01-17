@@ -4,21 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyHP : MonoBehaviour
+public class HPMPmanager : MonoBehaviour
 {
-    private static EnemyHP instance;
+    private static HPMPmanager instance;
     
-    public static EnemyHP Instance
+    public static HPMPmanager Instance
     {
         get
         {
             if (instance == null)
             {
-                instance = FindObjectOfType<EnemyHP>(); //하이라키에서 데이터컨트롤러를 찾아서 넣음
+                instance = FindObjectOfType<HPMPmanager>(); //하이라키에서 데이터컨트롤러를 찾아서 넣음
                 if (instance == null) //찾았는데도 생성이 안되서 없을때.
                 {
-                    GameObject container = new GameObject("EnemyHP");
-                    instance = container.AddComponent<EnemyHP>();
+                    GameObject container = new GameObject("HPMPmanager");
+                    instance = container.AddComponent<HPMPmanager>();
                 }
             }
 

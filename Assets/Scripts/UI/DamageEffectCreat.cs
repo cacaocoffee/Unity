@@ -25,12 +25,20 @@ public class DamageEffectCreat : MonoBehaviour
             return instance;
         } 
     }
-    public GameObject hudDamageText;
+    public GameObject DamageText;
+    public GameObject CriDamageText;
     public GameObject hub;
     public Transform hudPos;
+    
     public void DamageCreat()
     {
-        GameObject hudText = Instantiate(hudDamageText, hub.gameObject.transform); ;
+        GameObject hudText = Instantiate(DamageText, hub.gameObject.transform); ;
         hudText.transform.position = hudPos.position;
     }
+    public void CriticalDamageCreat()
+    {
+        GameObject hudText = Instantiate(CriDamageText, hub.gameObject.transform); ;
+        hudText.transform.position = hudPos.position;
+    }
+    
 }

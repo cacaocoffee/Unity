@@ -91,6 +91,16 @@ public class DataController : MonoBehaviour
         get { return PlayerPrefs.GetInt("Damage",1); }
         set { PlayerPrefs.SetInt("Damage", value); }
     }
+    public int CriDamage //치명타 데미지배율
+    {
+        get { return PlayerPrefs.GetInt("CriDamage",2); }
+        set { PlayerPrefs.SetInt("CriDamage", value); }
+    }
+    public int CriPercent //치명타확률
+    {
+        get { return PlayerPrefs.GetInt("CriPercent",1); }
+        set { PlayerPrefs.SetInt("CriPercent", value); }
+    }
 
     public int Hero_MaxMp
     {
