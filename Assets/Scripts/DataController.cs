@@ -30,12 +30,6 @@ public class DataController : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
     
-    public int Damage //클릭당 데미지 
-    {
-        get { return PlayerPrefs.GetInt("Damage",1); }
-        set { PlayerPrefs.SetInt("Damage", value); }
-    }
-
     public int Level //적 캐릭터의 레벨 _ 체력과 연관
     {
         get { return PlayerPrefs.GetInt("Level",1); }
@@ -56,6 +50,46 @@ public class DataController : MonoBehaviour
     {
         get { return PlayerPrefs.GetInt("Enemy_MaxHp",10); }
         set { PlayerPrefs.SetInt("Enemy_MaxHp",value);}
+    }
+
+    //====================캐릭터의 스텟창====================//
+    public int Hero_Lv //레벨
+    {
+        get { return PlayerPrefs.GetInt("Hero_Lv",1); }
+        set { PlayerPrefs.SetInt("Hero_Lv",value);}
+    }
+    public int Hero_MaxHp //체력 힘 비례 
+    {
+        get { return PlayerPrefs.GetInt("Hero_MaxHp",10); }
+        set { PlayerPrefs.SetInt("Hero_MaxHp",value);}
+    }
+    public int Hero_hp //현재 체력 
+    {
+        get { return PlayerPrefs.GetInt("Hero_hp",10); }
+        set { PlayerPrefs.SetInt("Hero_hp",value);}
+    }
+    
+    public int Hero_Power//힘
+    {
+        get { return PlayerPrefs.GetInt("Hero_Power",1); }
+        set { PlayerPrefs.SetInt("Hero_Power",value);}
+    }
+    
+    public int Hero_Agility//민첩
+    {
+        get { return PlayerPrefs.GetInt("Hero_Agility",1); }
+        set { PlayerPrefs.SetInt("Hero_Agility",value);}
+    }
+    
+    public int Hero_Intellgence//지능
+    {
+        get { return PlayerPrefs.GetInt("Hero_Intellgence",1); }
+        set { PlayerPrefs.SetInt("Hero_Intellgence",value);}
+    }
+    public int Damage //클릭당 데미지 
+    {
+        get { return PlayerPrefs.GetInt("Damage",1); }
+        set { PlayerPrefs.SetInt("Damage", value); }
     }
 
 }
