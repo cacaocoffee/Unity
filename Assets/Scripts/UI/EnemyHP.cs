@@ -33,6 +33,10 @@ public class EnemyHP : MonoBehaviour
     private Slider HpBar;
     [SerializeField]
     private Text HPtext;
+    [SerializeField]
+    private Slider MPBar;
+    [SerializeField]
+    private Text Mptext;
     
     void Update()
     {
@@ -40,6 +44,8 @@ public class EnemyHP : MonoBehaviour
         EnemyHPtext.text = (int)DataController.Instance.Enemy_Hp + "/" + (int)DataController.Instance.Enemy_MaxHp; //적 체력 표시 Text
         HpBar.value = Mathf.Lerp(HpBar.value, (float)DataController.Instance.Hero_hp/(float) DataController.Instance.Hero_MaxHp, Time.deltaTime * 10);//체력표시바
         HPtext.text = (int)DataController.Instance.Hero_hp + "/" + (int)DataController.Instance.Hero_MaxHp; //체력 표시 Text
+        MPBar.value = Mathf.Lerp(MPBar.value, (float)DataController.Instance.Hero_Mp/(float) DataController.Instance.Hero_MaxMp, Time.deltaTime * 10);//체력표시바
+        Mptext.text = (int)DataController.Instance.Hero_Mp + "/" + (int)DataController.Instance.Hero_MaxMp; //체력 표시 Text
     }
 
 

@@ -92,4 +92,15 @@ public class DataController : MonoBehaviour
         set { PlayerPrefs.SetInt("Damage", value); }
     }
 
+    public int Hero_MaxMp
+    {
+        get { return PlayerPrefs.GetInt("Hero_MaxMp",10); }
+        set { PlayerPrefs.SetInt("Hero_MaxMp", value); }
+    }
+    public int Hero_Mp
+    {
+        get { return PlayerPrefs.GetInt("Hero_Mp",10); }
+        set { PlayerPrefs.SetInt("Hero_Mp", value); }
+    }
+    //====================캐릭터의 스텟창====================//
 }
