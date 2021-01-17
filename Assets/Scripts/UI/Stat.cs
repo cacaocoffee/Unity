@@ -4,28 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Stat : MonoBehaviour
+public class Stat :  Singleton<Stat>
 {
     private static Stat instance;
-
-    public static Stat Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                instance = FindObjectOfType<Stat>();
-                if (instance == null)
-                {
-                    GameObject container = new GameObject("Stat");
-                    instance = container.AddComponent<Stat>();
-                }
-            }
-
-            return instance;
-        }
-    }
-
+    
     public Text StatDisplay_MaxHp;
     public Text StatDisplay_P;
     public Text StatDisplay_A;

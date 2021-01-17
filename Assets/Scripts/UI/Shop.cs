@@ -4,26 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Shop : MonoBehaviour
+public class Shop :Singleton<Shop> 
 {
-    private static Shop instance;
-    public static Shop Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                instance = FindObjectOfType<Shop>(); 
-                if (instance == null) 
-                {
-                    GameObject container = new GameObject("Shop");
-                    instance = container.AddComponent<Shop>();
-                }
-            }
-
-            return instance;
-        } 
-    }
+   
     public Text Item1_Displayer;
     
     public int Item1 //첫번째 아이템 레벨

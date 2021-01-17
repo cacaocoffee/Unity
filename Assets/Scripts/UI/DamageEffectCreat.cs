@@ -4,27 +4,9 @@ using System.Diagnostics;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
-public class DamageEffectCreat : MonoBehaviour
+public class DamageEffectCreat : Singleton<DamageEffectCreat> 
 {
-    private static DamageEffectCreat instance;
-
-    public static DamageEffectCreat Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                instance = FindObjectOfType<DamageEffectCreat>();
-                if (instance == null) 
-                {
-                    GameObject container = new GameObject("DamageEffectCreat");
-                    instance = container.AddComponent<DamageEffectCreat>();
-                }
-            }
-
-            return instance;
-        } 
-    }
+   
     public GameObject DamageText;
     public GameObject CriDamageText;
     public GameObject hub;

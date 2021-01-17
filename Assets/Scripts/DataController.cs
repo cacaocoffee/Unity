@@ -93,12 +93,12 @@ public class DataController : MonoBehaviour
     }
     public int CriDamage //치명타 데미지배율
     {
-        get { return PlayerPrefs.GetInt("CriDamage",2); }
+        get { return PlayerPrefs.GetInt("CriDamage",20); }
         set { PlayerPrefs.SetInt("CriDamage", value); }
     }
     public int CriPercent //치명타확률
     {
-        get { return PlayerPrefs.GetInt("CriPercent",1); }
+        get { return PlayerPrefs.GetInt("CriPercent",100); }
         set { PlayerPrefs.SetInt("CriPercent", value); }
     }
 

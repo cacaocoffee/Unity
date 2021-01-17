@@ -6,7 +6,7 @@ using UnityEngine;
 using Random = System.Random;
 
 
-public class Attack : MonoBehaviour
+public class Attack : Singleton<Attack> 
 {
     public Animator animator;
     public void OnClick()
