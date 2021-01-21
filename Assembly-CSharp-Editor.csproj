@@ -358,11 +358,11 @@
  <Reference Include="UnityEditor.WebGL.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="nunit.framework">
- <HintPath>C:/Users/twina/OneDrive/바탕 화면/test1/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
- </Reference>
  <Reference Include="Ionic.Zip">
  <HintPath>C:/Users/twina/OneDrive/바탕 화면/test1/Assets/AnimationImporter/Editor/PyxelEdit/Ionic.Zip.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Users/twina/OneDrive/바탕 화면/test1/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

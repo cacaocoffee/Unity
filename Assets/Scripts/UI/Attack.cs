@@ -31,6 +31,7 @@ public class Attack : Singleton<Attack>
         DataController.Instance.Enemy_MaxHp = (int) a;
         DataController.Instance.Enemy_Hp = DataController.Instance.Enemy_MaxHp;;
         DataController.Instance.Gold += DataController.Instance.Level * 10;
+        BGcontroller.Instance.stop++;
     }
     public void Attack_Enemy()
     {
