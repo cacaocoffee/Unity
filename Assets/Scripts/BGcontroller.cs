@@ -6,10 +6,13 @@ public class BGcontroller : Singleton<BGcontroller>
 {
     private MeshRenderer render;
 
+
     public float speed;
     private float offset;
 
     public int stop;
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -27,5 +30,7 @@ public class BGcontroller : Singleton<BGcontroller>
             render.material.mainTextureOffset = new Vector2(offset, 0);
         }
     }
+    
+    
 }
 

@@ -26,12 +26,14 @@ public class Attack : Singleton<Attack>
     }
     public void Enemydie()
     {
-        DataController.Instance.Level+=1;
-        float a = 10 * Mathf.Pow(1.6f, DataController.Instance.Level);
-        DataController.Instance.Enemy_MaxHp = (int) a;
+        DataController.Instance.Level+=1;                                            //레벨증가
+        float a = 10 * Mathf.Pow(1.6f, DataController.Instance.Level);           //HP관련 
+        DataController.Instance.Enemy_MaxHp = (int) a;                              
         DataController.Instance.Enemy_Hp = DataController.Instance.Enemy_MaxHp;;
-        DataController.Instance.Gold += DataController.Instance.Level * 10;
-        BGcontroller.Instance.stop++;
+        DataController.Instance.Gold += DataController.Instance.Level * 10;         //골드 
+        BGcontroller.Instance.stop++;//배경 관리
+        DataController.Instance.Stage++;
+        UImanager.Instance.StageChange();
     }
     public void Attack_Enemy()
     {

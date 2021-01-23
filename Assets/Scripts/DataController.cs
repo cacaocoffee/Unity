@@ -35,6 +35,11 @@ public class DataController : MonoBehaviour
         get { return PlayerPrefs.GetInt("Level",1); }
         set { PlayerPrefs.SetInt("Level",value);}
     }
+    public int Stage //적 캐릭터의 레벨 _ 체력과 연관
+    {
+        get { return PlayerPrefs.GetInt("Stage",1); }
+        set { PlayerPrefs.SetInt("Stage",value);}
+    }
     public int Gold //골드
     {
         get { return PlayerPrefs.GetInt("Gold",0); }

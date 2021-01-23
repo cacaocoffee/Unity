@@ -11,7 +11,8 @@ public class UImanager : Singleton<UImanager>
     public GameObject ShopMenu;
     public GameObject statButton;
     public GameObject shopButton;
-
+    public GameObject Stage1;
+    public GameObject Stage2;
     public void ButtonsOpen() // 버튼들을 보여줌
     {
         statButton.gameObject.SetActive(true);
@@ -41,5 +42,24 @@ public class UImanager : Singleton<UImanager>
     {
         ShopMenu.gameObject.SetActive(false);
     }
+    
+    public void StageChange() // 스테이지 변경 
+    {
+        if (DataController.Instance.Stage == 1)
+        {
+            Stage1.gameObject.SetActive(true);
+            Stage2.gameObject.SetActive(false);
+        }
+        if (DataController.Instance.Stage == 2)
+        {
+            Stage1.gameObject.SetActive(false);
+            Stage2.gameObject.SetActive(true);
+        }
+    }
 
+
+    private void Start()
+    {
+        StageChange();
+    }
 }
