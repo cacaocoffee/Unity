@@ -42,6 +42,13 @@ public class ButtonManager : MonoBehaviour
             case "ShopExit":
                 UImanager.Instance.ShopExitButton();
                 break;
+            case "Skill":
+                UImanager.Instance.SkillButton();
+                UImanager.Instance.ButtonsClose();
+                break;
+            case "SkillExit":
+                UImanager.Instance.SkillExitButton();
+                break;
         }
     }
 }

@@ -9,20 +9,24 @@ public class UImanager : Singleton<UImanager>
 
     public GameObject StatMenu;
     public GameObject ShopMenu;
+    public GameObject SkillMenu;
     public GameObject statButton;
     public GameObject shopButton;
+    public GameObject skillButton;
     public GameObject Stage1;
     public GameObject Stage2;
     public void ButtonsOpen() // 버튼들을 보여줌
     {
         statButton.gameObject.SetActive(true);
         shopButton.gameObject.SetActive(true);
+        skillButton.gameObject.SetActive(true);
     }
 
     public void ButtonsClose() //버튼들을 숨김
     {
         statButton.gameObject.SetActive(false);
         shopButton.gameObject.SetActive(false);
+        skillButton.gameObject.SetActive(false);
     }
     
 
@@ -37,6 +41,14 @@ public class UImanager : Singleton<UImanager>
     public void ShopButton()
     {
         ShopMenu.gameObject.SetActive(true);
+    }
+    public void SkillButton()
+    {
+        SkillMenu.gameObject.SetActive(true);
+    }
+    public void SkillExitButton()
+    {
+        SkillMenu.gameObject.SetActive(false);
     }
     public void ShopExitButton()
     {
