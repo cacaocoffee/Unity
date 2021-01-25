@@ -26,7 +26,7 @@ public class ButtonManager : MonoBehaviour
                 UImanager.Instance.StatButton();
                 UImanager.Instance.ButtonsClose();
                 break;
-            
+                
             case "StatExit":
                 UImanager.Instance.StatExitButton();
                 //tuchManager.HiteffectOnoff = false;
