@@ -103,7 +103,7 @@ public class DataController : MonoBehaviour
     }
     public int CriPercent //치명타확률
     {
-        get { return PlayerPrefs.GetInt("CriPercent",100); }
+        get { return PlayerPrefs.GetInt("CriPercent",1); }
         set { PlayerPrefs.SetInt("CriPercent", value); }
     }
 
